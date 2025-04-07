@@ -22,5 +22,8 @@ clone-c:
 setup-p:
 	cd tctxto-proxy/grpc-web/go/grpcwebproxy/ && openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -subj "/CN=localhost" && openssl rsa -in key.pem -out decrypted_key.pem && cd ../../../../
 
+setup-c:
+	cd tctxto-client/frontend/ && npm install && cd ../../
+
 init:
-	make clone-s && make clone-p && make clone-c && make setup-p
+	make clone-s && make clone-p && make clone-c && make setup-p && make setup-c
