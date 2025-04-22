@@ -18,3 +18,9 @@ git submodule update --init --recursive
 # Update submodules
 git submodule update --remote
 ```
+
+## How to build
+
+```
+make -B build
+```
