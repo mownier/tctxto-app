@@ -59,3 +59,15 @@ run-windows-prepare:
 	mv libs/tctxto-server/build/windows/* . && \
 	mv libs/tctxto-proxy/build/windows/* . && \
 	mv libs/tctxto-client/build/windows/* .
+
+run-app:
+	go build && ./tctxtoapp
+
+run-app-w:
+	go build -o tctxtoapp.exe  && ./tctxtoapp.exe
+
+run-macos: run-macos-prepare run-app
+
+run-linux: run-linux-prepare run-app
+
+run-windows: run-windows-prepare run-app-w
