@@ -1,9 +1,9 @@
 [submodule "libs/tctxto-server"]
 	path = libs/tctxto-server
-	url = https://github.com/mownier/tctxto-server.git
+	url = git@github.com:mownier/tctxto-server.git
 [submodule "libs/tctxto-proxy"]
 	path = libs/tctxto-proxy
-	url = https://github.com/mownier/tctxto-proxy.git
+	url = git@github.com:mownier/tctxto-proxy.git
 [submodule "libs/tctxto-client"]
 	path = libs/tctxto-client
-	url = https://github.com/mownier/tctxto-client.git
+	url = git@github.com:mownier/tctxto-client.git
