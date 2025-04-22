@@ -7,6 +7,7 @@ build-macos:
 	cd ../tctxto-proxy && make build-macos && \
 	cd ../tctxto-client && make build-macos && \
 	cd ../../ && \
+	GOOS=darwin GOARCH=amd64 go build -o build/macos/tctxtoapp && \
 	mv libs/tctxto-server/build/macos/* build/macos/ && \
 	mv libs/tctxto-proxy/build/macos/* build/macos/ && \
 	mv libs/tctxto-client/build/macos/* build/macos/
@@ -17,6 +18,7 @@ build-linux:
 	cd ../tctxto-proxy && make build-linux && \
 	cd ../tctxto-client && make build-linux && \
 	cd ../../ && \
+	GOOS=linux GOARCH=amd64 go build -o build/linux/tctxtoapp && \
 	mv libs/tctxto-server/build/linux/* build/linux/ && \
 	mv libs/tctxto-proxy/build/linux/* build/linux/ && \
 	mv libs/tctxto-client/build/linux/* build/linux/
@@ -27,6 +29,7 @@ build-windows:
 	cd ../tctxto-proxy && make build-windows && \
 	cd ../tctxto-client && make build-windows && \
 	cd ../../ && \
+	GOOS=windows GOARCH=amd64 go build -o build/windows/tctxtoapp.exe && \
 	mv libs/tctxto-server/build/windows/* build/windows/ && \
 	mv libs/tctxto-proxy/build/windows/* build/windows/ && \
 	mv libs/tctxto-client/build/windows/* build/windows/
