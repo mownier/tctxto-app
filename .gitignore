@@ -1,2 +1,22 @@
 # macOS
 .DS_Store
+
+build/
+
+consumers.json
+
+grpcwebproxy
+tctxtocl
+tctxtopx
+tctxtosv
+
+grpcwebproxy.exe
+tctxtocl.exe
+tctxtopx.exe
+tctxtosv.exe
+
+tctxtoapp
+
+vendor/
+
+.env
